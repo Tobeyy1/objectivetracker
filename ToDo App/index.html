@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <title>ToDo App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftSide">
+        <div class="todo">
+          <h1>ToDo App</h1>
+          <button class="themeToggler">
+            <span class="material-icons-sharp">light_mode</span>
+            <span class="material-icons-sharp">nightlight_round</span>
+          </button>
+        </div>
+        <div class="leftInterface">
+          <header>
+            <h2>New Task</h2>
+            <form id="newTaskForm">
+              <input
+                type="text"
+                id="newTaskInput"
+                placeholder="Input New Task"
+              />
+              <input
+                type="submit"
+                id="submitText"
+                class="SubmitNewTask"
+                value="Add Task"
+              />
+              <input
+                type="submit"
+                class="SubmitNewTask"
+                id="submitIcon"
+                value="Add"
+              />
+            </form>
+          </header>
+
+          <div class="progress">
+            <div class="progressBar"></div>
+          </div>
+
+          <main>
+            <section class="taskList">
+              <div class="tasksTop">
+                <h2>Tasks</h2>
+                <button class="reset">Reset</button>
+              </div>
+              <div id="tasks">
+                <!-- <div class="task">
+                  <div class="content">
+                    <input
+                      type="text"
+                      class="text"
+                      id="text"
+                      value="My shiny task"
+                      placeholder="j"
+                      readonly
+                    />
+                    <div class="time">09:00</div>
+                  </div>
+                  <div class="actions">
+                    <button class="edit">
+                      <span class="material-icons-sharp">edit</span>
+                    </button>
+                    <button class="done">
+                      <span class="material-icons-sharp">task_alt</span>
+                    </button>
+                    <button class="deleted">
+                      <span class="material-icons-sharp">delete_forever</span>
+                    </button>
+                  </div>
+                  <div class="blurr completed"></div>
+                </div> -->
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+      <div class="rightSide">
+        <div class="skill">
+          <div class="outer">
+            <div class="inner">
+              <div id="number">0</div>
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="160px"
+            height="160px"
+          >
+            <defs>
+              <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#e91e63" />
+                <stop offset="100%" stop-color="#673ab7" />
+              </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="170" stroke-linecap="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="rotate">
+      <h1>Change Screen Orientation</h1>
+      <span class="material-icons-sharp"> screen_rotation </span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
